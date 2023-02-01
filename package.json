@@ -1,0 +1,20 @@
+{
+    "name": "abc-tutoring-company",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.php",
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@wordpress/scripts": "^25.2.0",
+        "bootstrap": "^5.2.3"
+    },
+    "devDependencies": {
+        "wp-scripts": "^0.0.1-security"
+    }
+}

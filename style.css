@@ -1,0 +1,127 @@
+/* 
+Theme Name: ABC Tutoring Company
+Author: Michelle
+Version: 1.0
+Description: Website for the ABC Tutoring Company.
+*/
+
+/* This file is used by WordPress to give information about our theme. It requires a CSS comment */
+
+/* body {
+    overflow-x: hidden;
+    overflow-y: auto;
+} */
+
+/* font-family: 'Questrial', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Poiret One', cursive;
+*/
+
+:root {
+    /* --main-lightest: #eeeeee;
+    --main-light: rgb(112, 112, 112);
+    --main-medium: #626262;
+    --main-dark: #464646;
+    --main-darkest: #20202c;
+    --bg-light: #fafafb;
+    --bg-body: white;
+    --box-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.22); */
+    --font-questrial: 'Questrial', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-poiret-one: 'Poiret One', sans-serif;
+}
+
+.nav-co-title {
+    font-family: var(--font-questrial);
+    text-shadow: 3px 3px 1px rgb(218, 218, 218);
+}
+
+.sticky-nav {
+    height: 8vh;
+    width: 100vw;
+    /* background-color: #f1f1f1; */
+    background-image: linear-gradient(to right, rgba(233, 233, 233, 0.75), rgba(255, 255, 255, 0.75));
+    /* padding-top: 2vh; */
+    position: fixed;
+}
+
+.jumbotron {
+    /* color: white; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 450px;
+    min-width: 100vh;
+    overflow: hidden;
+    display: block;
+}
+
+.jumbotron-title,
+.home-jumbotron-text {
+    text-align: center;
+    /* font-family: var(--font-questrial);
+    font-family: var(--font-oxygen); */
+    font-family: var(--font-poiret-one);
+    /* font-family: var(--font-roboto); */
+    /* color: $font-dark; */
+    /* text-shadow: 3px 3px $gradient-light; */
+    /* font-size: 3.1rem; */
+    font-size: 3.9rem;
+    text-shadow: 3px 3px 1px rgb(218, 218, 218);
+}
+
+.jumbotron-subtitle {
+    font-family: var(--font-questrial);
+    color: white;
+    /* color: rgb(104, 104, 104); */
+    /* background-color: rgb(94, 94, 94); */
+    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); */
+    background-image: linear-gradient(to right, rgba(78, 78, 78, 0.65), rgba(71, 71, 71, 0.65));
+    font-size: 1.6rem;
+    /* text-shadow: 3px 3px 1px rgb(104, 104, 104); */
+}
+
+.post-item-title {
+    font-family: var(--font-questrial);
+    font-size: 2rem;
+    color: black;
+    /* text-shadow: 3px 3px 1px rgb(218, 218, 218); */
+}
+
+.post-item-title a {
+    color: black;
+}
+
+.post-link, .post-link:hover {
+    color: rgb(63, 63, 63);
+}
+
+.services-item-title {
+    color: black;
+    padding-right: 15px;
+}
+
+.services-item-title:hover {
+    color: black;
+}
+
+.heading--small {
+    font-family: var(--font-questrial);
+}
+
+.footer-headline {
+    font-family: var(--font-questrial);
+}
+
+.footer-ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-item, .footer-item:hover {
+    color: black;
+}
+
