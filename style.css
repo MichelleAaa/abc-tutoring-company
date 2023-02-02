@@ -44,8 +44,26 @@ font-family: 'Poiret One', cursive;
     width: 100vw;
     /* background-color: #f1f1f1; */
     background-image: linear-gradient(to right, rgba(233, 233, 233, 0.75), rgba(255, 255, 255, 0.75));
+    /* background-color: rgb(233, 233, 233); */
     /* padding-top: 2vh; */
     position: fixed;
+}
+
+.navbar-collapse.show {
+    /* background-image: linear-gradient(to right, rgba(233, 233, 233, 0.75), rgba(255, 255, 255, 0.75)); */
+    background-color: rgb(243, 243, 243);
+    border-radius: 25px;
+}
+
+.navbar-collapse li {
+    margin-left: 15px;
+}
+
+.nav-link {
+    color: rgb(73, 73, 73) !important;
+}
+.nav-link.active {
+    text-shadow: 3px 3px 1px rgb(218, 218, 218);
 }
 
 .jumbotron {
@@ -56,6 +74,83 @@ font-family: 'Poiret One', cursive;
     min-width: 100vh;
     overflow: hidden;
     display: block;
+}
+
+.jumbotron-banner {
+    position: relative;
+}
+
+.jumbotron-search {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+}
+
+.search-input {
+    border-radius: 7px;
+    color:rgb(63, 63, 63);
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
+    /* border: 2px solid rgb(182, 182, 182); */
+    border: 2px solid rgb(240, 239, 239);
+}
+
+.search-btn {
+    border-radius: 7px;
+    /* background-image: linear-gradient(to right, rgba(78, 78, 78, 0.65), rgba(71, 71, 71, 0.65)); */
+    /* background-color: transparent !important; */
+    /* background-color: white; */
+
+    /* color: white; */
+    padding: 20px;
+    min-width: 100px;
+    color: rgb(104, 104, 104);
+    font-weight: bold;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
+    padding: 3px;
+    /* border: 1px solid gray; */
+    border: 2px solid rgb(240, 239, 239);
+    transition: all 0.5s;
+}
+
+.search-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.search-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.search-btn:hover span {
+    padding-right: 25px;
+}
+
+.search-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* .search-btn:hover { */
+    /* background-image: linear-gradient(to right, rgba(78, 78, 78, 0.65), rgba(71, 71, 71, 0.65));
+    color: white; */
+/* } */
+
+
+/* UPDATE THIS LATER: */
+.search-input:focus, .search-input:active {
+    /* border: 2px solid rgb(240, 239, 239) !important;
+    box-shadow: 0 5px 10px rgb(240, 239, 239) !important; */
+    border: none;
+    box-shadow: none;
 }
 
 .jumbotron-title,

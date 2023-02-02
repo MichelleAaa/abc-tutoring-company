@@ -23,6 +23,9 @@
     // Add google fonts:
     wp_enqueue_style( 'custom-google-fonts', 'http://fonts.googleapis.com/css?family=Questrial:300,400,700,900|Poppins:300,400,700|Roboto:300,400,700,900|Oxygen:300,400,700,900|Poiret+One:300,400,700,900', false);
     
+     wp_localize_script('abc-tutoring-js','ABCTutoringData', array(
+    'root_url' => get_site_url()// This will enable us to get the site_url dynamically.
+    ));//This is a WP function that wil let us output a little bit of JS data into the html source of the website. It takes three arguments. 1st - name or handle of the JS file yo uare trying to make flexible. In this case "main-university-js'. 2nd - make up a varible name, and the name doesn't matter. 3rd - an array of data that needs to be made available in JS.
     }
 
     add_action('wp_enqueue_scripts', 'abc_tutoring_company_files');
@@ -50,7 +53,10 @@
         } 
 
     ?>
-        <div class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center" style="background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url(<?php echo get_theme_file_uri($args['photo']) ?>)">
+        <div class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center jumbotron-banner" style="background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url(<?php echo get_theme_file_uri($args['photo']) ?>)">
+        <div class="jumbotron-search">
+            <?php get_search_form(); ?> 
+        </div>
         <div class="container-fluid">
             <div class="row mx-auto d-flex justify-content-center">
                 <div class="col-12 mx-auto d-flex justify-content-center">
