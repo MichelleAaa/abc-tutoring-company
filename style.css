@@ -5,19 +5,6 @@ Version: 1.0
 Description: Website for the ABC Tutoring Company.
 */
 
-/* This file is used by WordPress to give information about our theme. It requires a CSS comment */
-
-/* body {
-    overflow-x: hidden;
-    overflow-y: auto;
-} */
-
-/* font-family: 'Questrial', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Oxygen', sans-serif;
-font-family: 'Poiret One', cursive;
-*/
-
 :root {
     /* --main-lightest: #eeeeee;
     --main-light: rgb(112, 112, 112);
@@ -27,11 +14,17 @@ font-family: 'Poiret One', cursive;
     --bg-light: #fafafb;
     --bg-body: white;
     --box-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.22); */
+    --main-aqua: rgb(28, 143, 185);
+    --main-aqua-dark: rgb(8, 85, 112);
     --font-questrial: 'Questrial', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
     --font-oxygen: 'Oxygen', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
     --font-poiret-one: 'Poiret One', sans-serif;
+}
+
+body {
+    font-family: var(--font-poppins);
 }
 
 .nav-co-title {
@@ -42,15 +35,11 @@ font-family: 'Poiret One', cursive;
 .sticky-nav {
     height: 8vh;
     width: 100vw;
-    /* background-color: #f1f1f1; */
     background-image: linear-gradient(to right, rgba(233, 233, 233, 0.75), rgba(255, 255, 255, 0.75));
-    /* background-color: rgb(233, 233, 233); */
-    /* padding-top: 2vh; */
     position: fixed;
 }
 
 .navbar-collapse.show {
-    /* background-image: linear-gradient(to right, rgba(233, 233, 233, 0.75), rgba(255, 255, 255, 0.75)); */
     background-color: rgb(243, 243, 243);
     border-radius: 25px;
 }
@@ -66,12 +55,17 @@ font-family: 'Poiret One', cursive;
     text-shadow: 3px 3px 1px rgb(218, 218, 218);
 }
 
+.nav-link:hover {
+    text-shadow: 3px 3px 3px rgb(218, 218, 218);
+    color: rgb(33, 33, 33) !important;
+}
+
 .jumbotron {
-    /* color: white; */
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 450px;
-    min-width: 100vh;
+    /* min-width: 100vh; */
+    min-width: auto;
     overflow: hidden;
     display: block;
 }
@@ -83,25 +77,49 @@ font-family: 'Poiret One', cursive;
 .jumbotron-search {
     position: absolute;
     bottom: 4%;
-    right: 4%;
+    right: 4vw;
 }
+
+/* @media only screen and (max-width: 575px) {
+    .jumbotron-search {
+        right: 4vw;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .jumbotron-search {
+        right: 4vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .jumbotron-search {
+        right: 4vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .jumbotron-search {
+        right: 8vw;
+    }
+} */
+
+/* @media only screen and (min-width: 1200px) {
+    .jumbotron-search {
+        right: 4vw;
+    }
+} */
 
 .search-input {
     border-radius: 7px;
     color:rgb(63, 63, 63);
     background-color: transparent;
     background-image: linear-gradient(to right, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
-    /* border: 2px solid rgb(182, 182, 182); */
     border: 2px solid rgb(240, 239, 239);
 }
 
 .search-btn {
     border-radius: 7px;
-    /* background-image: linear-gradient(to right, rgba(78, 78, 78, 0.65), rgba(71, 71, 71, 0.65)); */
-    /* background-color: transparent !important; */
-    /* background-color: white; */
-
-    /* color: white; */
     padding: 20px;
     min-width: 100px;
     color: rgb(104, 104, 104);
@@ -109,11 +127,11 @@ font-family: 'Poiret One', cursive;
     background-color: transparent;
     background-image: linear-gradient(to right, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
     padding: 3px;
-    /* border: 1px solid gray; */
     border: 2px solid rgb(240, 239, 239);
     transition: all 0.5s;
 }
 
+/* For chevron to right: */
 .search-btn span {
     cursor: pointer;
     display: inline-block;
@@ -139,10 +157,32 @@ font-family: 'Poiret One', cursive;
     right: 0;
 }
 
-/* .search-btn:hover { */
-    /* background-image: linear-gradient(to right, rgba(78, 78, 78, 0.65), rgba(71, 71, 71, 0.65));
-    color: white; */
-/* } */
+/* For Chevron to Left: */
+.back-link span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.back-link span:after {
+    content: '«';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    transition: 0.5s;
+}
+
+.back-link:hover span {
+    padding-left: 25px;
+    padding-right: 8px;
+}
+
+.back-link:hover span:after {
+    opacity: 1;
+    left: 10px;
+}
 
 
 /* UPDATE THIS LATER: */
@@ -156,13 +196,7 @@ font-family: 'Poiret One', cursive;
 .jumbotron-title,
 .home-jumbotron-text {
     text-align: center;
-    /* font-family: var(--font-questrial);
-    font-family: var(--font-oxygen); */
     font-family: var(--font-poiret-one);
-    /* font-family: var(--font-roboto); */
-    /* color: $font-dark; */
-    /* text-shadow: 3px 3px $gradient-light; */
-    /* font-size: 3.1rem; */
     font-size: 3.9rem;
     text-shadow: 3px 3px 1px rgb(218, 218, 218);
 }
@@ -170,40 +204,82 @@ font-family: 'Poiret One', cursive;
 .jumbotron-subtitle {
     font-family: var(--font-questrial);
     color: white;
-    /* color: rgb(104, 104, 104); */
-    /* background-color: rgb(94, 94, 94); */
-    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)); */
     background-image: linear-gradient(to right, rgba(78, 78, 78, 0.65), rgba(71, 71, 71, 0.65));
     font-size: 1.6rem;
-    /* text-shadow: 3px 3px 1px rgb(104, 104, 104); */
 }
 
 .post-item-title {
     font-family: var(--font-questrial);
     font-size: 2rem;
-    color: black;
-    /* text-shadow: 3px 3px 1px rgb(218, 218, 218); */
+    /* color: black; */
 }
 
 .post-item-title a {
-    color: black;
+    /* color: black; */
+    color: rgb(59, 59, 59);
+}
+
+.post-item-title a:hover {
+    text-decoration: none;
+    color: var(--main-aqua-dark);
+    /* font-style: italic; */
+    /* color:rgb(104, 104, 104); */
+    /* color: rgb(59, 59, 59); */
+    /* color: black; */
+    text-shadow: 3px 3px 1px rgb(218, 218, 218);
 }
 
 .post-link, .post-link:hover {
     color: rgb(63, 63, 63);
+    color: var(--main-aqua);
 }
 
 .services-item-title {
-    color: black;
+    color: var(--main-aqua);
     padding-right: 15px;
 }
 
 .services-item-title:hover {
-    color: black;
+    color: var(--main-aqua-dark);
+    text-decoration: none;
+}
+
+.read-link, .read-link:hover {
+    color: var(--main-aqua);
 }
 
 .heading--small {
     font-family: var(--font-questrial);
+}
+
+.services-subheading {
+    font-family: var(--font-questrial);
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.page-numbers, .contact-link {
+    color: var(--main-aqua);
+}
+
+.page-numbers:hover, .read-link:hover, .contact-link:hover {
+    color: var(--main-aqua-dark);
+    text-decoration: none;
+}
+
+.wpuf_submit_81 {
+    background-color: var(--main-aqua);
+    color: white;
+}
+
+.wpuf_submit_81:hover {
+    background-color: var(--main-aqua-dark) !important;
+    color: white;
+}
+
+label .required {
+    color: transparent !important;
 }
 
 .footer-headline {
@@ -218,5 +294,9 @@ font-family: 'Poiret One', cursive;
 
 .footer-item, .footer-item:hover {
     color: black;
+}
+
+i {
+    color: rgb(16, 43, 250);
 }
 

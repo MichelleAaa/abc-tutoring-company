@@ -60,7 +60,7 @@
         <div class="container-fluid">
             <div class="row mx-auto d-flex justify-content-center">
                 <div class="col-12 mx-auto d-flex justify-content-center">
-                    <h1 class="jumbotron-title text-nowrap"><?php echo $args['title'] ?></h1>
+                    <h1 class="jumbotron-title"><?php echo $args['title'] ?></h1>
                 </div>
             </div>
             <!-- <div class="row d-flex justify-content-center">

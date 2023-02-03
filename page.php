@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <!-- <div class="row mb-3">
             <div class="col-11">
-                <a class="metabox__blog-home-link" href="<?php echo site_url('/blog'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to Blog Home</a> 
+                <a class="metabox__blog-home-link" href="<?php echo site_url('/blog'); ?>">Back to Blog Home</a> 
             </div>
         </div> -->
     <?php 

@@ -14,7 +14,7 @@
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-10">
                     <h2 class="post-item-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <?php the_excerpt(); ?> ...<a href="<?php the_permalink(); ?>">Read More</a>
+                    <?php the_excerpt(); ?> ...<a href="<?php the_permalink(); ?>" class="read-link">Read More</a>
                     <hr>
                 </div>
             </div>

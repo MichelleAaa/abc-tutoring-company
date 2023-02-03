@@ -1,6 +1,6 @@
-<footer class="container-fluid mt-5">
-    <div class="row d-flex justify-content-center">
-        <div class="col-4">
+<footer class="container-fluid mt-5 mb-2">
+    <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
+        <div class="col-5 col-md-4 d-flex justify-content-start flex-column text-left px-0 mx-0">
             <h3 class="footer-headline">Site Links</h3>
             <ul class="footer-ul">
                 <li>
@@ -20,18 +20,26 @@
                 </li>
             </ul>
         </div>
-        <div class="col-4 text-left text-nowrap mb-5">
-            <h3 class="footer-headline">Contact Us</h3>
-            <a href="http://facebook.com/" class="social-color-facebook mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="http://twitter.com/" class="social-color-twitter mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="http://youtube.com/" class="social-color-youtube mx-2"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/" class="social-color-linkedin mx-2"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a href="http://instagram.com/" class="social-color-instagram mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <div class="col-7 col-sm-5 pl-0 ml-0 pr-3">
+            <div class="d-flex justify-content-end">
+                <div class="text-right">
+                    <h3 class="footer-headline text-center">Contact Us</h3>
+                    <a href="http://facebook.com/" class="social-color-facebook mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="http://twitter.com/" class="social-color-twitter mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="http://youtube.com/" class="social-color-youtube mx-2"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/" class="social-color-linkedin mx-2"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="http://instagram.com/" class="social-color-instagram mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pl-0 ml-0 d-flex justify-content-center">
+        <div class="col-10">
+            <p>&copy; Copyright <?php echo date("Y") ?>. All Rights Reserved.</p>
         </div>
     </div>
 </footer>
 
-<!-- wp_footer() gives WP the ability to load JS files. Also, in this case, it adds in the black WP menu bar at the top of the page. -->
 <?php wp_footer(); ?>
 </body>
 </html>

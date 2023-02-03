@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row mb-3">
             <div class="col-11">
-                <a class="post-link" href="<?php echo site_url('/blog'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to Blog Home</a> 
+                <a class="post-link back-link" href="<?php echo site_url('/blog'); ?>"><span>Back to Blog Home</span></a> 
             </div>
         </div>
     <?php 

@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row mb-3">
             <div class="col-11">
-                <a class="post-link" href="<?php echo site_url('/tutoring-services'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to Our Services Overview</a> 
+                <a class="post-link back-link" href="<?php echo site_url('/tutoring-services'); ?>"><span>Back to Tutoring Services</span></a> 
             </div>
         </div>
     <?php 

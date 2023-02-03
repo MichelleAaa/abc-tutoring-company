@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row mb-3">
             <div class="col-11">
-                <a class="post-link" href="<?php echo site_url('/test-prep-services'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to Test Prep Services Overview</a> 
+                <a class="post-link back-link" href="<?php echo site_url('/test-prep-services'); ?>"><span>Back to Test Prep Services</span></a> 
             </div>
         </div>
     <?php 

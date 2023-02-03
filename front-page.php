@@ -50,6 +50,33 @@
                 <?php wp_reset_postdata(); ?>
             </div>
         </div>
+        <div class="row">
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-6">
+                    <!-- UPDATE HERE -->
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- UPDATE HERE -->
+                                <div class="row">
+                                    <div class="col-12">
+                                    <!-- UPDATE HERE -->
+                                    </div>
+                                    <div class="col-12">
+                                    <!-- UPDATE HERE -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <!-- UPDATE HERE -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 <?php 
 
