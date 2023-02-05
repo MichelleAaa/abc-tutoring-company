@@ -10,9 +10,7 @@
     wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), true);
     }
 
-
     add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
-
 
     function abc_tutoring_company_files() {
     // To use style.css:

@@ -336,24 +336,13 @@ body {
     width: 100%;
 }
 
-/* @media only screen and (min-width: 768px) {
-    .header-small-img {
-        height: 350px;
-        width: 20vw;
-    }
-
-    .header-small-img:nth-child(3) {
-        width: 30vw;
-    }
-} */
-
 .img-wrapper {
     margin-top: 20px;
 }
 
 @media only screen and (min-width: 992px) {
     .topleft {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .img-grid-1 {
         height: 400px;
@@ -451,8 +440,7 @@ label .required {
 }
 
 .sidebar-primary ul li a {
-    color: black;
-    
+    color: black;    
 }
 
 .sidebar-testimonial {
