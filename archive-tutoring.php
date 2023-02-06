@@ -3,7 +3,7 @@
     pageBanner(array(
         'title' => 'Tutoring Services Overview',
         'subtitle' => 'K-12 Tutoring Services in A Variety of Subjects',
-        'photo' => 'images/screenshot.png'
+        'photo' => 'images/pencils-uncovered-cropped.jpg'
     ));
 ?>
 

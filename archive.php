@@ -4,7 +4,7 @@
     pageBanner(array(
         'title' => 'Blog Archive',
         'subtitle' => 'Full Listing of Blog Posts',
-        'photo' => 'images/screenshot.png'
+        'photo' => 'images/pencils-uncovered-cropped.jpg'
     ));
 ?>
 

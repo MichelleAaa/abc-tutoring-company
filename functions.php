@@ -6,48 +6,35 @@
 
 	wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', false, '1.16.1', true);
 
-	// wp_register_script('bootstrap4', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', false, '4.5.1', true);
     wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), true);
     }
 
     add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
 
     function abc_tutoring_company_files() {
+
     // To use style.css:
     wp_enqueue_style('university_main_styles', get_stylesheet_uri());
+    
     // Use fontawesome:
     wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
     // Add google fonts:
     wp_enqueue_style( 'custom-google-fonts', 'http://fonts.googleapis.com/css?family=Questrial:300,400,700,900|Poppins:300,400,700|Roboto:300,400,700,900|Oxygen:300,400,700,900|Poiret+One:300,400,700,900', false);
     
-     wp_localize_script('abc-tutoring-js','ABCTutoringData', array(
-    'root_url' => get_site_url()// This will enable us to get the site_url dynamically.
-    ));//This is a WP function that wil let us output a little bit of JS data into the html source of the website. It takes three arguments. 1st - name or handle of the JS file yo uare trying to make flexible. In this case "main-university-js'. 2nd - make up a varible name, and the name doesn't matter. 3rd - an array of data that needs to be made available in JS.
     }
 
     add_action('wp_enqueue_scripts', 'abc_tutoring_company_files');
 
-
     function pageBanner($args = NULL) {
-    if (!isset($args['title'])) {
-        $args['title'] = get_the_title();
-    }
-    // Set the custom fields entry if there's no entry for subtitle in the array:
-    if (!isset($args['subtitle'])) {
-        $args['subtitle'] = get_field('page_banner_subtitle');
-    }
-
+        if (!isset($args['title'])) {
+            $args['title'] = get_the_title();
+        }
+        if (!isset($args['subtitle'])) {
+            $args['subtitle'] = get_field('page_banner_subtitle');
+        }
         if (!isset($args['photo'])) {
-        // page_banner_background_image is a custom field where you can upload an image for the post or page. --
-        // We are listing !is_archive() AND !is_home because if the first event in a list of events has a background image on a page like the home page or an archive page, the system can get confused and try to use it as the banner for the entire archive page. So we want to skip that behavior and move to the next lines.
-        // if (get_field('page_banner_background_image') AND !is_archive() AND !is_home()) {
-        //     $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
-        // } else {
-            //  This is the backup if there's no photo link in the args or in the page_banner_background_image custom field.
-            // $args['photo'] = get_theme_file_uri($args['photo']);
-            $args['photo'] = $args['photo'];
-        // } 
+            $args['photo'] = 'images/screenshot.png'; 
         } 
 
     ?>
@@ -61,13 +48,8 @@
                     <h1 class="jumbotron-title"><?php echo $args['title'] ?></h1>
                 </div>
             </div>
-            <!-- <div class="row d-flex justify-content-center">
-                <div class="col-11">
-                    <hr class="header-line">
-                </div>
-            </div> -->
             <div class="row d-flex justify-content-center">
-                <div class="col-11 col-sm-8 col-xl-9 mb-xl-0">
+                <div class="col-11 col-sm-8 mb-xl-0">
                     <p class="text-center m-3 jumbotron-subtitle"><?php echo $args['subtitle']; ?></p>
                 </div>
             </div>
@@ -75,7 +57,7 @@
     </div>
     <?php }
 
-// THIS HAS BEEN MOVED INTO MU-PLUGINS:
+// This has been moved to mu-plugins:
     // function tutoring_post_types(){
     // register_post_type('tutoring', array(
     //     'show_in_rest' => true, //You can add this if you are adding excerpt to the supports option below. This show_in_rest will let us see the custom post type of 'event' that we are adding in the wp-admin screen with the modern block editor (when editing a post) instead of the older editor layout. -- rest api makes raw api data avialable for JS to fetch, so we need it enabled for custom post types. (Note that for this to work, you must add 'editor' below, or else you will go back to the standard editor.)
@@ -128,15 +110,8 @@
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
-	) );
-// 	register_sidebar( array(
-// 		'name'          => __( 'Secondary Sidebar', 'theme_name' ),
-// 		'id'            => 'sidebar-2',
-// 		'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</li></ul>',
-// 		'before_title'  => '<h3 class="widget-title">',
-// 		'after_title'   => '</h3>',
-// 	) );
+	));
 }
+
 add_action( 'widgets_init', 'abc_tutoring_widgets_init' );
 ?>

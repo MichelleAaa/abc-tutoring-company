@@ -6,20 +6,12 @@ Description: Website for the ABC Tutoring Company.
 */
 
 :root {
-    /* --main-lightest: #eeeeee;
-    --main-light: rgb(112, 112, 112);
-    --main-medium: #626262;
-    --main-dark: #464646;
-    --main-darkest: #20202c;
-    --bg-light: #fafafb;
-    --bg-body: white;
-    --box-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.22); */
     --main-aqua: rgb(28, 143, 185);
     --main-aqua-dark: rgb(8, 85, 112);
     --font-questrial: 'Questrial', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
-    --font-oxygen: 'Oxygen', sans-serif;
-    --font-roboto: 'Roboto', sans-serif;
+    /* --font-oxygen: 'Oxygen', sans-serif; */
+    /* --font-roboto: 'Roboto', sans-serif; */
     --font-poiret-one: 'Poiret One', sans-serif;
 }
 
@@ -64,7 +56,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 450px;
-    /* min-width: 100vh; */
     min-width: auto;
     overflow: hidden;
     display: block;
@@ -79,36 +70,6 @@ body {
     bottom: 4%;
     right: 4vw;
 }
-
-/* @media only screen and (max-width: 575px) {
-    .jumbotron-search {
-        right: 4vw;
-    }
-}
-
-@media only screen and (min-width: 576px) {
-    .jumbotron-search {
-        right: 4vw;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .jumbotron-search {
-        right: 4vw;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .jumbotron-search {
-        right: 8vw;
-    }
-} */
-
-/* @media only screen and (min-width: 1200px) {
-    .jumbotron-search {
-        right: 4vw;
-    }
-} */
 
 .search-input {
     border-radius: 7px;
@@ -185,13 +146,8 @@ body {
     left: 10px;
 }
 
-
-/* UPDATE THIS LATER: */
 .search-input:focus, .search-input:active {
-    /* border: 2px solid rgb(240, 239, 239) !important;
-    box-shadow: 0 5px 10px rgb(240, 239, 239) !important; */
-    border: none;
-    box-shadow: none;
+    outline: #a8c4a9 solid 2px;
 }
 
 .jumbotron-title,
@@ -200,6 +156,8 @@ body {
     font-family: var(--font-poiret-one);
     font-size: 3.9rem;
     text-shadow: 3px 3px 1px rgb(218, 218, 218);
+    font-weight: bold;
+    color: rgb(61, 61, 61);
 }
 
 .jumbotron-subtitle {
@@ -211,7 +169,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .jumbotron-title {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
     }
     .jumbotron-subtitle {
         font-size: 1.2rem;
@@ -220,7 +178,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     .jumbotron-title {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     .jumbotron-subtitle {
         font-size: 1.3rem;
@@ -229,7 +187,7 @@ body {
 
 @media only screen and (min-width: 992px) {
     .jumbotron-title {
-        font-size: 2.7rem;
+        font-size: 3rem;
     }
     .jumbotron-subtitle {
         font-size: 1.5rem;
@@ -248,26 +206,19 @@ body {
 .post-item-title {
     font-family: var(--font-questrial);
     font-size: 2rem;
-    /* color: black; */
 }
 
 .post-item-title a {
-    /* color: black; */
     color: rgb(59, 59, 59);
 }
 
 .post-item-title a:hover {
     text-decoration: none;
     color: var(--main-aqua-dark);
-    /* font-style: italic; */
-    /* color:rgb(104, 104, 104); */
-    /* color: rgb(59, 59, 59); */
-    /* color: black; */
     text-shadow: 3px 3px 1px rgb(218, 218, 218);
 }
 
 .post-link, .post-link:hover {
-    color: rgb(63, 63, 63);
     color: var(--main-aqua);
 }
 
@@ -290,33 +241,31 @@ body {
 } 
 
 .img-grid {
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    min-height: 100%;
     object-fit: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
     transition: .2s;
     border-radius: 5px;
-    /* opacity: 0.3; */
+    margin: auto;
+    object-position: left bottom;
 }
 
 .topleft {
     position: absolute;
     bottom: 0;
     padding: 3px;
-    /* left: 16px; */
     font-size: 0.8rem;
     text-align: center;
     background-color: rgba(255, 255, 255, .8);
     width: 100%;
     color: black;
-    /* font-family: var(--font-poiret-one); */
 }
 
 .img-grid:hover {
     transform: scale(1.15);
-    /* filter: brightness(1.2); */
 }
 
 .img-grid-1 {
@@ -327,12 +276,10 @@ body {
 .img-grid-2 {
     height: 130px;
     width: 100%;
-    /* margin-bottom: 10px; */
 }
 
 .img-grid-3 {
     height: 250px;
-    /* overflow: hidden; */
     width: 100%;
 }
 
@@ -352,7 +299,6 @@ body {
     .img-grid-2 {
         height: 130px;
         width: auto;
-        /* margin-bottom: 10px; */
     }
 
     .img-grid-3 {
@@ -367,7 +313,6 @@ body {
     width: 100%;
     border-radius: 5px;
 }
-
 
 .read-link, .read-link:hover {
     color: var(--main-aqua);
@@ -390,7 +335,6 @@ body {
 
 .page-numbers:hover, .read-link:hover, .contact-link:hover {
     color: var(--main-aqua-dark);
-    /* text-decoration: none; */
 }
 
 .wpuf_submit_81 {
@@ -410,9 +354,7 @@ label .required {
 .sidebar-primary {
     font-size: .9rem;
     margin-top: 20px;
-    /* background-color:rgba(253, 253, 230, 0.3); */
     background-color:rgba(249, 217, 118, .11);
-    /* background-image: linear-gradient(to bottom, rgba(249, 217, 118, .2), rgba(243, 159, 134, .2)); */
     padding: 15px;
     border-radius: 20px;
 }
@@ -448,8 +390,6 @@ label .required {
     font-size: .8rem;
 }
 
-
-
 .footer-headline {
     font-family: var(--font-questrial);
 }
@@ -465,10 +405,11 @@ label .required {
 }
 
 a .fa {
-    color: rgb(16, 43, 250);
+    color: var(--main-aqua);
 }
 
 a .fa:hover {
-    color: rgb(8, 22, 115);
+    color: var(--main-aqua-dark);
     transform: scale(1.15);
 }
+

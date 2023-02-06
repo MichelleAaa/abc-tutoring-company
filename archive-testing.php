@@ -3,7 +3,7 @@
     pageBanner(array(
         'title' => 'Test Prep Services Overview',
         'subtitle' => 'Prep for the SAT, ACT, and More',
-        'photo' => 'images/screenshot.png'
+        'photo' => 'images/pencils-uncovered-cropped.jpg'
     ));
 ?>
 

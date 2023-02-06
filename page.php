@@ -3,7 +3,7 @@
     pageBanner(array(
         'title' => get_the_title(),
         'subtitle' => '',
-        'photo' => 'images/screenshot.png'
+        'photo' => 'images/pencils-uncovered-cropped.jpg'
     ));
 ?>
 
@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-12 col-md-9 col-xl-10">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-lg-10">
+                    <div class="col-11 col-lg-10">
                     <?php 
                     while(have_posts()) {
                         the_post(); ?>

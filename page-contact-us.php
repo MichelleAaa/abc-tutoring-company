@@ -3,7 +3,8 @@
     pageBanner(array(
         'title' => get_the_title(),
         'subtitle' => '',
-        'photo' => 'images/screenshot.png'
+        // 'photo' => 'images/pencils-wave.jpg'
+        'photo' => 'images/pencils-line-cropped.jpg'
     ));
 ?>
 

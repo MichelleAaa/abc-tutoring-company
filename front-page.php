@@ -52,7 +52,7 @@
                 </div>
                 <div class="row d-flex justify-content-center mt-5 mb-3">
                     <div class="col-11 col-lg-10">
-                        <h2 class="heading-small text-center">Check Out Our Recent Blog Posts</h2>
+                        <h2 class="heading--small text-center">Check Out Our Recent Blog Posts</h2>
                     </div>
                 </div>
                 <?php 
