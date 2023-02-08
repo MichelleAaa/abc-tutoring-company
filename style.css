@@ -6,13 +6,17 @@ Description: Website for the ABC Tutoring Company.
 */
 
 :root {
-    --main-aqua: rgb(28, 143, 185);
-    --main-aqua-dark: rgb(8, 85, 112);
+    --main-font-dark: rgb(61, 61, 61);
+    /* --main-aqua: rgb(28, 143, 185); */
+    --main-aqua: rgba(3, 118, 160, 1);
+    /* --main-aqua-dark: rgb(8, 85, 112); */
+    --main-aqua-dark: rgba(0, 60, 87, 1);
+    --main-light-gray: rgb(218, 218, 218);
     --font-questrial: 'Questrial', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
-    /* --font-oxygen: 'Oxygen', sans-serif; */
-    /* --font-roboto: 'Roboto', sans-serif; */
     --font-poiret-one: 'Poiret One', sans-serif;
+    /* --font-roboto: 'Roboto', sans-serif; */
+    --font-oxygen: 'Oxygen', sans-serif;
 }
 
 body {
@@ -21,7 +25,7 @@ body {
 
 .nav-co-title {
     font-family: var(--font-questrial);
-    text-shadow: 3px 3px 1px rgb(218, 218, 218);
+    text-shadow: 3px 3px 1px var(--main-light-gray);
 }
 
 .sticky-nav {
@@ -44,11 +48,11 @@ body {
     color: rgb(73, 73, 73) !important;
 }
 .nav-link.active {
-    text-shadow: 3px 3px 1px rgb(218, 218, 218);
+    text-shadow: 3px 3px 1px var(--main-light-gray);
 }
 
 .nav-link:hover {
-    text-shadow: 3px 3px 3px rgb(218, 218, 218);
+    text-shadow: 3px 3px 3px var(--main-light-gray);
     color: rgb(33, 33, 33) !important;
 }
 
@@ -63,6 +67,7 @@ body {
 
 .jumbotron-banner {
     position: relative;
+    background-attachment: fixed;
 }
 
 .jumbotron-search {
@@ -78,6 +83,7 @@ body {
     background-image: linear-gradient(to right, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
     border: 2px solid rgb(240, 239, 239);
     width: 150px;
+    outline: rgb(240, 239, 239) solid 2px;
 }
 
 .search-btn {
@@ -155,16 +161,20 @@ body {
     text-align: center;
     font-family: var(--font-poiret-one);
     font-size: 3.9rem;
-    text-shadow: 3px 3px 1px rgb(218, 218, 218);
+    text-shadow: 3px 3px 1px var(--main-light-gray);
     font-weight: bold;
-    color: rgb(61, 61, 61);
+    color: var(--main-font-dark);
 }
 
 .jumbotron-subtitle {
     font-family: var(--font-questrial);
     color: white;
-    background-image: linear-gradient(to right, rgba(78, 78, 78, 0.65), rgba(71, 71, 71, 0.65));
+    background-image: linear-gradient(to right, rgba(3, 118, 160, 0.75), rgba(0, 60, 87, 0.75));
+    border-radius: 5px;
     font-size: 1.6rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
 }
 
 @media only screen and (max-width: 767px) {
@@ -215,11 +225,60 @@ body {
 .post-item-title a:hover {
     text-decoration: none;
     color: var(--main-aqua-dark);
-    text-shadow: 3px 3px 1px rgb(218, 218, 218);
+    text-shadow: 3px 3px 1px var(--main-light-gray);
 }
 
-.post-link, .post-link:hover {
+.services-title {
+    font-family: var(--font-poiret-one);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.post-item-title--small a {
+    font-size: 1.4rem;
+    color: var(--main-aqua-dark);
+    font-weight: bold;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+    .card {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card {
+        width: 230px;
+        height: 344px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        width: 250px;
+        height: 330px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .archive-item-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.post-link {
     color: var(--main-aqua);
+}
+
+.post-link:hover {
+    color: var(--main-aqua-dark);
 }
 
 .services-item-title {
@@ -257,39 +316,44 @@ body {
     position: absolute;
     bottom: 0;
     padding: 3px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .85);
     width: 100%;
-    color: black;
+    color: var(--main-font-dark);
+    font-family: var(--font-questrial);
 }
 
 .img-grid:hover {
     transform: scale(1.15);
+    width: 100%;
 }
 
 .img-grid-1 {
     height: 400px;
-    width: 100%;
 }
 
 .img-grid-2 {
     height: 130px;
-    width: 100%;
 }
 
 .img-grid-3 {
     height: 250px;
-    width: 100%;
 }
 
 .img-wrapper {
     margin-top: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+    .topleft {
+        font-size: 1.1rem;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     .topleft {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .img-grid-1 {
         height: 400px;
@@ -308,6 +372,12 @@ body {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .topleft {
+        font-size: 1.2rem;
+    }
+}
+
 .img-grid-small {
     height: 250px;
     width: 100%;
@@ -318,8 +388,40 @@ body {
     color: var(--main-aqua);
 }
 
+.blog-author a {
+    color: var(--main-aqua);
+}
+
+.blog-author a:hover {
+    color: var(--main-aqua-dark);
+}
+
 .heading--small {
     font-family: var(--font-questrial);
+}
+
+@media only screen and (max-width: 576px) {
+    .heading--services {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 577px) {
+    .heading--services {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .heading--services {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .heading--services {
+        font-size: 2rem;
+    }
 }
 
 .services-subheading {
@@ -352,11 +454,13 @@ label .required {
 }
 
 .sidebar-primary {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-top: 20px;
-    background-color:rgba(249, 217, 118, .11);
+    background-image: linear-gradient(to bottom right, rgba(233, 233, 233, 0.12), rgba(255, 255, 255, 0.12));
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 5px;
+    border: 0.5px solid var(--main-light-gray);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
 .sidebar-primary p {
@@ -366,7 +470,7 @@ label .required {
 
 .sidebar-primary h3 {
     font-family: var(--font-questrial);
-    color: var(--main-aqua);
+    color: var(--main-aqua-dark);
     font-size: 1.2rem;
     margin-top: 5px;
 }
@@ -387,7 +491,7 @@ label .required {
 
 .sidebar-testimonial {
     font-style: italic;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .footer-headline {
@@ -400,7 +504,7 @@ label .required {
     padding-left: 0;
 }
 
-.footer-item, .footer-item:hover {
+.footer-item, .footer-item:hover, .link-item, .link-item:hover  {
     color: black;
 }
 
@@ -412,4 +516,3 @@ a .fa:hover {
     color: var(--main-aqua-dark);
     transform: scale(1.15);
 }
-

@@ -20,13 +20,11 @@
                 the_post(); ?>
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-11 col-lg-10">
-                        <!-- <h2><?php the_title(); ?></h2> -->
                         <?php the_content(); ?> 
                         <hr>
                     </div>
                 </div>
             <?php }  ?>
-        
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-11 col-lg-10">
                     <?php echo paginate_links(); ?>
@@ -39,5 +37,4 @@
     </div>
 </div>
 
-    <?php get_footer();
-?>
+<?php get_footer(); ?>

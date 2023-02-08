@@ -1,38 +1,38 @@
 <?php
-// Note that in wp-admin this has been set as the page for the blog (/blog) and front-page.php is being used for the home page.
     get_header(); 
     pageBanner(array(
-        'title' => 'Blog Archive',
-        'subtitle' => 'Full Listing of Blog Posts',
+        // 'title' => 'Blog Archive',
+        // 'subtitle' => 'Full Listing of Blog Posts',
+        'title' => get_the_archive_title(),
         'photo' => 'images/pencils-uncovered-cropped.jpg'
     ));
 ?>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-9 col-xl-10">
+        <section class="col-12 col-md-9 col-xl-10">
         <?php 
         while(have_posts()) {
             the_post(); ?>
-            <div class="row d-flex justify-content-center align-items-center">
+            <article class="row d-flex justify-content-center align-items-center">
                 <div class="col-11 col-lg-10">
                     <h2 class="post-item-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <?php the_excerpt(); ?> ...<a href="<?php the_permalink(); ?>" class="read-link">Read More</a>
+                    <p class="mb-2"><?php echo wp_trim_words(get_the_content(), 55) . "..."; ?></p>
+                    <a href="<?php the_permalink(); ?>" class="read-link">Read More</a>
                     <hr>
                 </div>
-            </div>
+            </article>
             <?php }  ?>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-11 col-lg-10">
                     <?php echo paginate_links(); ?>
                 </div>
             </div>
-        </div>    
+        </section>    
         <div class="col-md-3 col-xl-2 d-none d-md-block">
                 <?php get_sidebar( 'primary' ); ?>
         </div>
     </div>
 </div>
 
-    <?php get_footer();
-?>
+<?php get_footer(); ?>

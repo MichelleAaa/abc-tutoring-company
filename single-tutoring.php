@@ -17,13 +17,13 @@
             </div>
             <?php 
             while(have_posts()) {
-            the_post(); ?>
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-11 col-lg-10">
-                    <?php the_content(); ?> 
-                    <hr>
+                the_post(); ?>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-11 col-lg-10">
+                        <?php the_content(); ?> 
+                        <hr>
+                    </div>
                 </div>
-            </div>
             <?php }  ?>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-11 col-lg-10">
@@ -37,5 +37,4 @@
     </div>
 </div>
 
-    <?php get_footer();
-?>
+<?php get_footer(); ?>
