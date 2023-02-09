@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center m-3">
-                <div class="col-5">
+                <div class="col-11 col-sm-5 mb-4 mb-sm-0">
                     <h2 class="heading--small heading--services text-center">Tutoring Services</h2>
                     <?php 
                         $tutoringPosts = new WP_Query(array(
@@ -32,7 +32,7 @@
                     </ul>
                     <?php wp_reset_postdata(); ?>
                 </div>
-                <div class="col-5">
+                <div class="col-11 col-sm-5">
                     <h2 class="heading--small heading--services text-center">Test Prep Services</h2>
                     <?php 
                         $testingPosts = new WP_Query(array(
