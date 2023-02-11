@@ -20,7 +20,7 @@
         wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
         // Add google fonts:
-        wp_enqueue_style( 'custom-google-fonts', 'http://fonts.googleapis.com/css?family=Questrial:300,400,700,900|Poppins:300,400,700|Poiret+One:300,400,700,900|Oxygen:300,400,700,900', false);
+        wp_enqueue_style( 'custom-google-fonts', 'http://fonts.googleapis.com/css?family=Questrial:300,400,700,900|Poppins:300,400,700|Poiret+One:300,400,700,900', false);
     }
 
     add_action('wp_enqueue_scripts', 'abc_tutoring_company_files');
@@ -60,43 +60,40 @@
     <?php }
 
 // This has been moved to mu-plugins:
-    // function tutoring_post_types(){
-    // register_post_type('tutoring', array(
-    //     'show_in_rest' => true, //You can add this if you are adding excerpt to the supports option below. This show_in_rest will let us see the custom post type of 'event' that we are adding in the wp-admin screen with the modern block editor (when editing a post) instead of the older editor layout. -- rest api makes raw api data avialable for JS to fetch, so we need it enabled for custom post types. (Note that for this to work, you must add 'editor' below, or else you will go back to the standard editor.)
-    //     'supports' => array('title', 'editor', 'excerpt', 'custom-fields'), //If you want the new post type to support custom excerpts in the wp-admin - post type setup, you have to add this. It's optional.(By default new post types support title and editor. It's up to us to decide if we want the rest.) -- Note for wp-admin - if you don't see excerpt, click screen options while editing the post, and select the Excert checkbox.
-    //     // custom-fields is optional. It's if you need extra fields to be added for that post type, such as an event date for the event post type.
+//     function tutoring_post_types(){
+//     register_post_type('tutoring', array(
+//         'show_in_rest' => true, //You can add this if you are adding excerpt to the supports option below. This show_in_rest will let us see the custom post type of 'event' that we are adding in the wp-admin screen with the modern block editor (when editing a post) instead of the older editor layout. -- rest api makes raw api data avialable for JS to fetch, so we need it enabled for custom post types. (Note that for this to work, you must add 'editor' below, or else you will go back to the standard editor.)
+//         'supports' => array('title', 'editor'), 
+//         'rewrite' => array('slug' => 'tutoring-services'),
+//         'has_archive' => true,
+//         'public' => true, 
+//         'menu_icon' => 'dashicons-calendar', 
+//         'labels' => array(
+//         'name' => "Tutoring Services", 
+//         'add_new_item' => "Add New Tutoring Service",
+//         'edit_item' => 'Edit Tutoring Service',
+//         'all_items' => "All Tutoring Services",
+//         'singular_name' => 'Tutoring Service'
+//         ) 
+//     ));
 
-    //     'rewrite' => array('slug' => 'tutoring-services'),
-    //     'has_archive' => true,
-    //     'public' => true, 
-    //     'menu_icon' => 'dashicons-calendar', 
-    //     'labels' => array(
-    //     'name' => "Tutoring Services", 
-    //     'add_new_item' => "Add New Tutoring Service",
-    //     'edit_item' => 'Edit Tutoring Service',
-    //     'all_items' => "All Tutoring Services",
-    //     'singular_name' => 'Tutoring Service'
-    //     ) 
-    // ));
-
-    // // Test Prep
-    // register_post_type('testing', array(
-    //     'show_in_rest' => true, //You can add this if you are adding excerpt to the supports option below. This show_in_rest will let us see the custom post type of 'event' that we are adding in the wp-admin screen with the modern block editor (when editing a post) instead of the older editor layout. -- rest api makes raw api data avialable for JS to fetch, so we need it enabled for custom post types. (Note that for this to work, you must add 'editor' below, or else you will go back to the standard editor.)
-    //     'supports' => array('title', 'editor', 'excerpt', 'custom-fields'), //If you want the new post type to support custom excerpts in the wp-admin - post type setup, you have to add this. It's optional.(By default new post types support title and editor. It's up to us to decide if we want the rest.) -- Note for wp-admin - if you don't see excerpt, click screen options while editing the post, and select the Excert checkbox.
-    //     // custom-fields is optional. It's if you need extra fields to be added for that post type, such as an event date for the event post type.
-    //     'rewrite' => array('slug' => 'test-prep-services'),
-    //     'has_archive' => true,
-    //     'public' => true, 
-    //     'menu_icon' => 'dashicons-calendar', 
-    //     'labels' => array(
-    //     'name' => "Test Prep Services", 
-    //     'add_new_item' => "Add New Test Prep Service",
-    //     'edit_item' => 'Edit Test Prep Service',
-    //     'all_items' => "All Test Prep Services",
-    //     'singular_name' => 'Test Prep Service'
-    //     ) 
-    // ));
-    // }
+//     // Test Prep
+//     register_post_type('testing', array(
+//         'show_in_rest' => true, 
+//         'supports' => array('title', 'editor'), 
+//         'rewrite' => array('slug' => 'test-prep-services'),
+//         'has_archive' => true,
+//         'public' => true, 
+//         'menu_icon' => 'dashicons-calendar', 
+//         'labels' => array(
+//         'name' => "Test Prep Services", 
+//         'add_new_item' => "Add New Test Prep Service",
+//         'edit_item' => 'Edit Test Prep Service',
+//         'all_items' => "All Test Prep Services",
+//         'singular_name' => 'Test Prep Service'
+//         ) 
+//     ));
+// }
 
     // add_action('init', 'tutoring_post_types');
 

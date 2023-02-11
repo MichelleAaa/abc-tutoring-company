@@ -22,6 +22,7 @@
     <div class="row">
         <section class="col-12 col-md-9 col-xl-10">
             <?php 
+            // Each blog post's ID is added to the postIds array, and then checked below in the if(!in_array(get_the_ID(), $postIds)) statement so duplicate posts are not output if the keyword is both in the title and content.
             $postIds = array();
             if($searchQuery->have_posts()){
                 while($searchQuery->have_posts()) {
@@ -38,7 +39,7 @@
                             </div>
                         </article>
                         <?php 
-                        $postIds[] = get_the_ID();
+                        $postIds[] = get_the_ID(); 
                     }
                 } 
             } else { ?> 

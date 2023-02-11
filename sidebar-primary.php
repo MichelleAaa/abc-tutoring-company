@@ -3,7 +3,7 @@
 	<h3>Contact Us Today!</h3>
 	<p><i class="fa fa-solid fa-phone"></i> <a href="tel:11234567890" class="link-item">(123) 456-7890</a></p>
 	<p><i class="fa fa-light fa-fax"></i> (098) 876-5432</p>
-	<p><a href="mailto:abctutoringcompany@gmail.com"> Send Us an Email!</a></p>
+	<p><a href="mailto:abctutoringco@gmail.com"> Send Us an Email!</a></p>
 	<h3 class="heading--small pt-1">Tutoring Services:</h3>
 	<?php 
 		$tutoringPosts = new WP_Query(array(
