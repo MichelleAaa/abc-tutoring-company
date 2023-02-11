@@ -12,16 +12,16 @@ Home Page Jumbotron, Navbar, and Search Field
 The home page features a navbar, jumbotron, and search field.
 
 
-Home Page Blog Post Photo and Title Grid
+Blog Post Photo and Title Grid
 
-![Home Page Blog Post Photo and Title Grid](images/readme/ABC-home-page-blog-grid.jpeg "The home page features a blog post photo and title grid.")
+![Blog Post Photo and Title Grid](images/readme/ABC-home-page-blog-grid.jpeg "The bottom of the home page features a blog post photo and title grid which changes based on screen size to remain responsive.")
 
-The home page features a blog post photo and title grid.
+The bottom of the home page features a blog post photo and title grid which changes based on screen size to remain responsive.
 
 
-Services Overview Pages
+Tutoring and Test Prep Services Overview Pages
 
-![Services Overview Pages](images/readme/ABC-services-cards.jpeg "The Test Prep Services and Tutoring Services pages include bootstrap cards, which draw data from the two custom post types created for the website.")
+![Tutoring and Test Prep Services Overview Pages](images/readme/ABC-services-cards.jpeg "The Test Prep Services and Tutoring Services pages include bootstrap cards, which draw data from the two custom post types created for the website.")
 
 The Test Prep Services and Tutoring Services pages include bootstrap cards, which draw data from the two custom post types created for the website.
 
@@ -48,31 +48,7 @@ The form in the Contact Us page was created with the weForms plugin. Form entrie
 
 ## See Live
 
-Visit: abctutoringco.000webhostapp.com
-
-## Launch Instructions
-
-Clone this repository to your local machine. 
-
-Download and install Local by Flywheel to access WordPress on your computer. (https://localwp.com/)
-
-Create a new WordPress website in Local by Flywheel. 
-
-In Local, click on "Go to site folder". Navigate to app -> public -> wp-content -> themes. Now create a folder for the abc-tutoring-company project.
-
-Unzip the repository file and add all the folders/files from the GitHub repository into the new folder you just created inside the newly created website project in Local.
-
-Next, please open functions.php in VS Code. You will need to uncomment the code starting with "function tutoring_post_types()" and ending with "add_action('init', 'tutoring_post_types');".
-
-Next, please ensure you have npm installed.
-
-In VS Code, open the terminal to the folder you created for this theme, abc-tutoring-company. To install the node modules, please run the following command:
-
-`npm install`  
-
-After starting the website in Local, please open the wp-admin panel to add content for the different post types. The blog post types will require a featured image to be uploaded as well for the home page photo grid to work correctly.
-
-**Please note that this application requires an internet connection.
+Visit: https://abctutoringco.000webhostapp.com/
 
 
 ## Reflection
