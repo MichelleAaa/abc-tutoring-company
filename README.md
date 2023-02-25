@@ -1,6 +1,6 @@
 # ABC Tutoring Company Website
 
-A website for the ABC Tutoring Company. Built with PHP, WordPress, Bootstrap, and CSS. The weForms plugin was used for the form on the Contact Us page.
+A simple custom theme for the ABC Tutoring Company. Built with PHP, WordPress, Bootstrap, and CSS. The weForms plugin was used for the form on the Contact Us page.
 
 
 ## Project Screen Shot(s)

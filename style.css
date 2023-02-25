@@ -231,6 +231,13 @@ body {
     font-size: 2rem;
 }
 
+.services-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .post-item-title--small a {
     font-size: 1.4rem;
     color: var(--main-aqua-dark);
