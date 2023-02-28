@@ -27,6 +27,11 @@
             <?php }  ?>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-11 col-lg-10">
+                    <p>By <span class="blog-author"><?php the_author_posts_link(); ?></span> on <?php the_time('F j, Y'); ?></p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-11 col-lg-10">
                     <?php echo paginate_links(); ?>
                 </div>
             </div>
