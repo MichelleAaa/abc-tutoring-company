@@ -5,6 +5,13 @@ Version: 1.0
 Description: Website for the ABC Tutoring Company.
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --main-font-dark: rgb(61, 61, 61);
     --main-aqua: rgba(3, 118, 160, 1);
@@ -27,6 +34,8 @@ body {
 .sticky-nav {
     height: 8vh;
     width: 100vw;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(233, 233, 233, 0.75)), to(rgba(255, 255, 255, 0.75)));
+    background-image: -o-linear-gradient(left, rgba(233, 233, 233, 0.75), rgba(255, 255, 255, 0.75));
     background-image: linear-gradient(to right, rgba(233, 233, 233, 0.75), rgba(255, 255, 255, 0.75));
     position: fixed;
 }
@@ -43,6 +52,7 @@ body {
 .nav-link {
     color: rgb(73, 73, 73) !important;
 }
+
 .nav-link.active {
     text-shadow: 3px 3px 1px var(--main-light-gray);
 }
@@ -74,8 +84,10 @@ body {
 
 .search-input {
     border-radius: 7px;
-    color:rgb(63, 63, 63);
+    color: rgb(63, 63, 63);
     background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(251, 251, 251, 0.65)), to(rgba(255, 255, 255, 0.65)));
+    background-image: -o-linear-gradient(left, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
     background-image: linear-gradient(to right, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
     border: 2px solid rgb(240, 239, 239);
     width: 150px;
@@ -89,9 +101,13 @@ body {
     color: rgb(104, 104, 104);
     font-weight: bold;
     background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(251, 251, 251, 0.65)), to(rgba(255, 255, 255, 0.65)));
+    background-image: -o-linear-gradient(left, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
     background-image: linear-gradient(to right, rgba(251, 251, 251, 0.65), rgba(255, 255, 255, 0.65));
     padding: 3px;
     border: 2px solid rgb(240, 239, 239);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -100,6 +116,8 @@ body {
     cursor: pointer;
     display: inline-block;
     position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -109,6 +127,8 @@ body {
     opacity: 0;
     top: 0;
     right: -20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -127,6 +147,8 @@ body {
     cursor: pointer;
     display: inline-block;
     position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -136,6 +158,8 @@ body {
     opacity: 0;
     top: 0;
     left: 20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -149,7 +173,8 @@ body {
     left: 10px;
 }
 
-.search-input:focus, .search-input:active {
+.search-input:focus,
+.search-input:active {
     outline: #a8c4a9 solid 2px;
 }
 
@@ -166,11 +191,15 @@ body {
 .jumbotron-subtitle {
     font-family: var(--font-questrial);
     color: white;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(3, 118, 160, 0.75)), to(rgba(0, 60, 87, 0.75)));
+    background-image: -o-linear-gradient(left, rgba(3, 118, 160, 0.75), rgba(0, 60, 87, 0.75));
     background-image: linear-gradient(to right, rgba(3, 118, 160, 0.75), rgba(0, 60, 87, 0.75));
     border-radius: 5px;
     font-size: 1.6rem;
     padding-left: 20px;
     padding-right: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -178,6 +207,7 @@ body {
     .jumbotron-title {
         font-size: 2.4rem;
     }
+
     .jumbotron-subtitle {
         font-size: 1.2rem;
     }
@@ -187,6 +217,7 @@ body {
     .jumbotron-title {
         font-size: 2.7rem;
     }
+
     .jumbotron-subtitle {
         font-size: 1.3rem;
     }
@@ -196,6 +227,7 @@ body {
     .jumbotron-title {
         font-size: 3rem;
     }
+
     .jumbotron-subtitle {
         font-size: 1.5rem;
     }
@@ -205,6 +237,7 @@ body {
     .jumbotron-title {
         font-size: 3.9rem;
     }
+
     .jumbotron-subtitle {
         font-size: 1.6rem;
     }
@@ -234,6 +267,7 @@ body {
 .services-img {
     height: 100%;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     display: block;
 }
@@ -298,21 +332,26 @@ body {
 .img-grid-container {
     position: relative;
     overflow: hidden;
+    -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
     padding: 0;
     border-radius: 5px;
-} 
+}
 
 .img-grid {
     min-width: 100%;
     min-height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
     border-radius: 5px;
     margin: auto;
+    -o-object-position: left bottom;
     object-position: left bottom;
 }
 
@@ -329,6 +368,8 @@ body {
 }
 
 .img-grid:hover {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
     width: 100%;
 }
@@ -359,6 +400,7 @@ body {
     .topleft {
         font-size: 1.1rem;
     }
+
     .img-grid-1 {
         height: 400px;
         width: 100%;
@@ -388,7 +430,8 @@ body {
     border-radius: 5px;
 }
 
-.read-link, .read-link:hover {
+.read-link,
+.read-link:hover {
     color: var(--main-aqua);
 }
 
@@ -435,11 +478,14 @@ body {
     padding-bottom: 4px;
 }
 
-.page-numbers, .contact-link {
+.page-numbers,
+.contact-link {
     color: var(--main-aqua);
 }
 
-.page-numbers:hover, .read-link:hover, .contact-link:hover {
+.page-numbers:hover,
+.read-link:hover,
+.contact-link:hover {
     color: var(--main-aqua-dark);
 }
 
@@ -460,10 +506,13 @@ label .required {
 .sidebar-primary {
     font-size: 0.9rem;
     margin-top: 20px;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(233, 233, 233, 0.12)), to(rgba(255, 255, 255, 0.12)));
+    background-image: -o-linear-gradient(top left, rgba(233, 233, 233, 0.12), rgba(255, 255, 255, 0.12));
     background-image: linear-gradient(to bottom right, rgba(233, 233, 233, 0.12), rgba(255, 255, 255, 0.12));
     padding: 15px;
     border-radius: 5px;
     border: 0.5px solid var(--main-light-gray);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
@@ -490,7 +539,7 @@ label .required {
 }
 
 .sidebar-primary ul li a {
-    color: black;    
+    color: black;
 }
 
 .sidebar-testimonial {
@@ -508,7 +557,10 @@ label .required {
     padding-left: 0;
 }
 
-.footer-item, .footer-item:hover, .link-item, .link-item:hover  {
+.footer-item,
+.footer-item:hover,
+.link-item,
+.link-item:hover {
     color: black;
 }
 
@@ -518,5 +570,7 @@ a .fa {
 
 a .fa:hover {
     color: var(--main-aqua-dark);
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
 }
