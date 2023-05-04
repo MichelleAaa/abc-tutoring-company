@@ -1,8 +1,8 @@
 <?php
     get_header(); 
     pageBanner(array(
-        'title' => 'Search Results',
-        'subtitle' => 'You searched for &ldquo;' . esc_html(get_search_query()) .  '&rdquo;',
+        'title' => esc_html__( 'Search Results', 'abc-tutoring' ),
+        'subtitle' => esc_html__( 'You searched for &ldquo; ', 'abc-tutoring' ) . esc_html(get_search_query()) .  esc_html( '&rdquo;' ),
         'photo' => 'images/screenshot.png'
     )); 
 ?>
@@ -34,7 +34,7 @@
                             <div class="col-11 col-lg-10">
                                 <h2 class="post-item-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <p class="mb-2"><?php echo wp_trim_words(get_the_content(), 55) . "..."; ?></p>
-                                <a href="<?php the_permalink(); ?>" class="read-link">Read More</a>
+                                <a href="<?php the_permalink(); ?>" class="read-link"><?php esc_html_e( 'Read More', 'abc-tutoring' ); ?></a>
                                 <hr>
                             </div>
                         </article>
@@ -45,7 +45,7 @@
             } else { ?> 
                 <div class="row d-flex justify-content-center align-items-center my-5">
                     <div class="col-11 col-lg-10">
-                        <h2 class="post-item-title headline--small text-center">Sorry, no results match that search.</h2>
+                        <h2 class="post-item-title headline--small text-center"><?php esc_html_e( 'Sorry, no results match that search.', 'abc-tutoring' ); ?></h2>
                     </div>
                 </div>
             <?php }

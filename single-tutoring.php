@@ -1,8 +1,8 @@
 <?php
     get_header();
     pageBanner(array(
-        'title' => get_the_title(),
-        'subtitle' => '',
+        'title' => esc_html(get_the_title()),
+        'subtitle' => esc_html(''),
         'photo' => 'images/screenshot.png'
     ));
 ?>
@@ -12,7 +12,7 @@
         <div class="col-12 col-md-9 col-xl-10">
             <div class="row mb-3">
                 <div class="col-11 col-lg-10">
-                    <a class="post-link back-link" href="<?php echo site_url('/tutoring-services'); ?>"><span>Back to Tutoring Services</span></a> 
+                    <a class="post-link back-link" href="<?php echo esc_url(site_url('/tutoring-services')); ?>"><span><?php esc_html_e( 'Back to Tutoring Services', 'abc-tutoring' ); ?></span></a> 
                 </div>
             </div>
             <?php 

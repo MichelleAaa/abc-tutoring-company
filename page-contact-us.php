@@ -1,8 +1,8 @@
 <?php
     get_header();
     pageBanner(array(
-        'title' => get_the_title(),
-        'subtitle' => '',
+        'title' => esc_html(get_the_title()),
+        'subtitle' => esc_html('', 'abc-tutoring'),
         'photo' => 'images/pencils-uncovered-cropped.jpg'
     ));
 ?>

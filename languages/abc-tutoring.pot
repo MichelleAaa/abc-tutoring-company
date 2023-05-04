@@ -1,0 +1,316 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ABC "
+"Tutoring Co Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"POT-Creation-Date: "
+"2023-05-04 16:36-0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Your Team "
+"<translations@example."
+"com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit "
+"3.2.2\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+"X-Poedit-"
+"SearchPathExcluded-0: "
+"node_modules\n"
+
+#: archive-testing.php:4
+msgid ""
+"Test Prep Services "
+"Overview"
+msgstr ""
+
+#: archive-testing.php:5
+msgid ""
+"Prep for the SAT, ACT, "
+"and More"
+msgstr ""
+
+#: archive-testing.php:15
+msgid ""
+"We Provide Tutoring "
+"Services for the "
+"Following Test Prep "
+"Subjects:"
+msgstr ""
+
+#: archive-testing.php:26
+#: archive-tutoring.php:26
+msgid "Continue Reading"
+msgstr ""
+
+#: archive-testing.php:35
+#: archive-tutoring.php:35
+msgid ""
+"Tutoring is Available "
+"Online & In-Person"
+msgstr ""
+
+#: archive-testing.php:41
+#: archive-tutoring.php:41
+msgid ""
+"At vero eos et accusamus "
+"et iusto odio "
+"dignissimos ducimus qui "
+"blanditiis praesentium "
+"voluptatum deleniti "
+"atque corrupti quos "
+"dolores et quas "
+"molestias excepturi sint "
+"occaecati cupiditate non "
+"provident, similique "
+"sunt in culpa qui "
+"officia deserunt "
+"mollitia animi, id est "
+"laborum et dolorum fuga. "
+"Et harum quidem rerum "
+"facilis est et expedita "
+"distinctio. Nam libero "
+"tempore, cum soluta "
+"nobis est eligendi optio "
+"cumque nihil impedit quo "
+"minus id quod maxime "
+"placeat facere possimus, "
+"omnis voluptas assumenda "
+"est, omnis dolor "
+"repellendus."
+msgstr ""
+
+#: archive-tutoring.php:4
+msgid ""
+"Tutoring Services "
+"Overview"
+msgstr ""
+
+#: archive-tutoring.php:5
+msgid ""
+"K-12 Tutoring Services "
+"in A Variety of Subjects"
+msgstr ""
+
+#: archive-tutoring.php:15
+msgid ""
+"We Provide Tutoring "
+"Services for the "
+"Following K-12 Subjects:"
+msgstr ""
+
+#: archive.php:21
+#: index.php:22
+#: search.php:37
+msgid "Read More"
+msgstr ""
+
+#: footer.php:5
+msgid "Site Links"
+msgstr ""
+
+#: footer.php:8
+#: front-page.php:19
+#: header.php:29
+msgid "Tutoring Services"
+msgstr ""
+
+#: footer.php:11
+#: front-page.php:36
+#: header.php:34
+msgid "Test Prep Services"
+msgstr ""
+
+#: footer.php:14
+#: header.php:39
+#: index.php:5
+msgid "Blog"
+msgstr ""
+
+#: footer.php:17
+#: header.php:44
+msgid "About Us"
+msgstr ""
+
+#: footer.php:20
+#: footer.php:27
+#: header.php:49
+msgid "Contact Us"
+msgstr ""
+
+#: footer.php:39
+msgid "&copy; Copyright"
+msgstr ""
+
+#: footer.php:39
+msgid ""
+". All Rights Reserved."
+msgstr ""
+
+#: front-page.php:4
+#: header.php:6
+#: header.php:18
+msgid ""
+"ABC Tutoring Company"
+msgstr ""
+
+#: front-page.php:5
+msgid ""
+"K-12 Tutoring and Test "
+"Prep Services"
+msgstr ""
+
+#: front-page.php:55
+msgid ""
+"Check Out Our Recent "
+"Blog Posts"
+msgstr ""
+
+#: functions.php:106
+msgid "Primary Sidebar"
+msgstr ""
+
+#: header.php:21
+msgid "Toggle navigation"
+msgstr ""
+
+#: index.php:6
+msgid ""
+"Check out our latest "
+"blog posts"
+msgstr ""
+
+#: index.php:19
+msgid "Posted by "
+msgstr ""
+
+#: index.php:19
+#: single.php:30
+msgid " on "
+msgstr ""
+
+#: search.php:4
+msgid "Search Results"
+msgstr ""
+
+#: search.php:5
+msgid ""
+"You searched for &ldquo; "
+msgstr ""
+
+#: search.php:48
+msgid ""
+"Sorry, no results match "
+"that search."
+msgstr ""
+
+#: searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: sidebar-primary.php:3
+msgid "Contact Us Today!"
+msgstr ""
+
+#: sidebar-primary.php:4
+msgid "(123) 456-7890"
+msgstr ""
+
+#: sidebar-primary.php:5
+msgid " (098) 876-5432"
+msgstr ""
+
+#: sidebar-primary.php:6
+msgid " Send Us an Email!"
+msgstr ""
+
+#: sidebar-primary.php:7
+msgid "Tutoring Services:"
+msgstr ""
+
+#: sidebar-primary.php:22
+msgid "Test Prep Services:"
+msgstr ""
+
+#: sidebar-primary.php:37
+msgid "Testimonial:"
+msgstr ""
+
+#: sidebar-primary.php:38
+msgid ""
+"Lorem ipsum dolor sit "
+"amet, consectetur "
+"adipiscing elit, sed do "
+"eiusmod tempor "
+"incididunt ut labore et "
+"dolore magna aliqua. Ut "
+"enim ad minim veniam, "
+"quis nostrud "
+"exercitation ullamco "
+"laboris nisi ut aliquip "
+"ex ea commodo consequat. "
+"Duis aute irure dolor in "
+"reprehenderit in "
+"voluptate velit esse "
+"cillum dolore eu fugiat "
+"nulla pariatur. "
+"Excepteur sint occaecat "
+"cupidatat non proident, "
+"sunt in culpa qui "
+"officia deserunt mollit "
+"anim id est laborum."
+msgstr ""
+
+#: sidebar-primary.php:39
+msgid " - Jack Bennett"
+msgstr ""
+
+#: single-testing.php:15
+msgid ""
+"Back to Test Prep "
+"Services"
+msgstr ""
+
+#: single-tutoring.php:15
+msgid ""
+"Back to Tutoring Services"
+msgstr ""
+
+#: single.php:15
+msgid "Back to Blog Home"
+msgstr ""

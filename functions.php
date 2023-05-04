@@ -103,7 +103,7 @@
     // Register sidebar:
     function abc_tutoring_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Primary Sidebar', 'theme_name' ),
+		'name'          => esc_html__( 'Primary Sidebar', 'theme_name' ),
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -113,4 +113,13 @@
 }
 
 add_action( 'widgets_init', 'abc_tutoring_widgets_init' );
+
+function ABC_tutoring_co_config(){
+    $textdomain = 'abc-tutoring';
+    load_theme_textdomain( $textdomain, get_stylesheet_directory() . '/languages/' );
+    load_theme_textdomain( $textdomain, get_template_directory() . '/languages/' );
+}
+
+add_action( 'after_setup_theme', 'ABC_tutoring_co_config', 0 );
+
 ?>

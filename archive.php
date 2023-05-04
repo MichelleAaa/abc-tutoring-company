@@ -18,7 +18,7 @@
                 <div class="col-11 col-lg-10">
                     <h2 class="post-item-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <p class="mb-2"><?php echo wp_trim_words(get_the_content(), 55) . "..."; ?></p>
-                    <a href="<?php the_permalink(); ?>" class="read-link">Read More</a>
+                    <a href="<?php the_permalink(); ?>" class="read-link"><?php esc_html_e( 'Read More', 'abc-tutoring' ); ?></a>
                     <hr>
                 </div>
             </article>
